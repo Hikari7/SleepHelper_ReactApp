@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+
+//スタイリング、これ仮なんで！！！
 
 function Header() {
   return (
-    <div>Header</div>
-  )
+    <div>
+      <div className="bg-slate-200 h-9 "></div>
+    </div>
+  );
 }
 
-export default Header
+export default Header;
