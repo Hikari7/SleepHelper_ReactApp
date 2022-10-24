@@ -1,21 +1,21 @@
 import React, { useState } from "react";
 import Header from "../Header";
 import Categories from "./Categories";
-import CategoriesVideo from "./CategoriesVideo";
+import Video from "./Video";
 import Search from "./Search";
 
 //video pageの1番の親
 
 function VideosMain() {
-  const [video, setVideo] = useState(null);
+  const [video, setVideo] = useState([]);
 
   return (
     <>
-      <div className="mx-auto items-center justify-center">
+      <div className="">
         <Header />
-        <CategoriesVideo setVideo={setVideo} />
+        <Video video={video}/>
         <Search />
-        <Categories />
+        <Categories setVideo={setVideo}  />
       </div>
     </>
   );

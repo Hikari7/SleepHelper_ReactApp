@@ -1,12 +1,16 @@
-import React from "react";
-import CategoriesVideo from "./CategoriesVideo";
+import React, { useState } from "react";
+import youtube from "../../apis/youtube";
 // import Iframe from "react-iframe";
 
-//CategoriesがCategoriesVideoの親であると私は認識しているよ
+function Categories({ setVideo }) {
+  const handleVideo = (genre) => {
+    const data = youtube.get("/search", {
+      params: {
+        q: genre,
+      },
+    });
 
-function Categories({}) {
-  const handleVideo = () => {
-    console.log("clicked");
+    setVideo(data);
   };
 
   return (
@@ -14,29 +18,22 @@ function Categories({}) {
       <ul>
         <li>
           <button
-            className="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900"
+            className="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900 my-6"
             type="button"
-            onClick={() => handleVideo()}
-          >
-            Rain
-          </button>
-        </li>
-        {/* <li>
-          <button
-            className="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900"
-            type="button"
+            onClick={() => handleVideo("rain")}
           >
             Rain
           </button>
         </li>
         <li>
           <button
-            className="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900"
+            className="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900 my-6"
             type="button"
+            onClick={() => handleVideo("ocean")}
           >
-            Rain
+            Ocian waves
           </button>
-        </li> */}
+        </li>
       </ul>
     </>
   );

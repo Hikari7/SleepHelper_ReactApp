@@ -5,7 +5,7 @@ import VideosMain from "./components/Videos/VideosMain";
 function App() {
   return (
     <div className="App">
-      {/* <Home /> */}
+      <Home />
       <VideosMain />
     </div>
   );
