@@ -11,7 +11,10 @@ const Video = ({ video }) => {
   const renderedVideo = video.map((videoItem) => {
     return (
       <div>
-        <VideoItem videoItem={videoItem} />
+        <VideoItem
+          videoItem={videoItem}
+          key={videoItem.data.items[0].videoId}
+        />
       </div>
     );
   });
