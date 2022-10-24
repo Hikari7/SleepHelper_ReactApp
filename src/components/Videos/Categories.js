@@ -3,14 +3,14 @@ import youtube from "../../apis/youtube";
 // import Iframe from "react-iframe";
 
 function Categories({ setVideo }) {
-  const handleVideo = (genre) => {
-    const data = youtube.get("/search", {
+  const handleVideo = async (genre) => {
+    const data = await youtube.get("/search", {
       params: {
         q: genre,
       },
     });
 
-    setVideo(data);
+    setVideo([data]);
   };
 
   return (
