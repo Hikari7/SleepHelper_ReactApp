@@ -18,4 +18,4 @@ function CategoryItem({ categoryName, handleVideo }) {
   );
 }
 
-export default CategoryItem;
+export default VideoItem;
