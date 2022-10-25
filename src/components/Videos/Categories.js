@@ -23,7 +23,7 @@ function Categories({ setVideo }) {
           <CategoryItem
             handleVideo={handleVideo}
             categoryName={categoryName}
-            key={index}
+           key={index}
           />
         );
       })}
