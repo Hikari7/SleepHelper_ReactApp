@@ -14,12 +14,9 @@ function VideoItem({ videoItem }) {
   return (
     <div>
       {title}
-      {/* <img src={thumbnail} /> */}
-
       <iframe
         src={videoSrc}
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
       />
     </div>
   );
