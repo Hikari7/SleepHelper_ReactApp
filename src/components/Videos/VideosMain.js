@@ -3,7 +3,6 @@ import Header from "../Header";
 import Categories from "./Categories";
 import Video from "./Video";
 import Search from "./Search";
-import { Link } from "react-router-dom";
 
 //video pageの1番の親
 
