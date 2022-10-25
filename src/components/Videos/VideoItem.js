@@ -5,21 +5,20 @@ function VideoItem({ videoItem }) {
     return <div>Loading...</div>;
   }
 
-  //   console.log(videoItem.data.items[0].snippet.thumbnails.medium.url);
+  let randomNum = Math.floor(Math.random() * 11);
 
-  const title = videoItem.data.items[0].snippet.channelTitle;
-  //   const thumbnail = videoItem.data.items[0].snippet.thumbnails.medium.url;
-  const videoSrc = `https://www.youtube.com/embed/${videoItem.data.items[0].id.videoId}`;
+  const title = videoItem.data.items[randomNum].snippet.channelTitle;
+  const videoSrc = `https://www.youtube.com/embed/${videoItem.data.items[randomNum].id.videoId}`;
 
   return (
-    <div>
+    <>
       {title}
       <iframe
         src={videoSrc}
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       />
-    </div>
+    </>
   );
 }
 

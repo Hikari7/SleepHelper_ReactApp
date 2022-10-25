@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useRef } from "react";
 
-function Search() {
+function Search({ setSearchQuery }) {
+  const searchRef = useRef();
+
+  const handleRef = () => {
+    setSearchQuery(
+      // categoryNames.filter((categoryName) =>
+      searchRef.current.value
+      // )
+    );
+  };
+  // console.log(categoryNames);
+
   return (
     <div>
       <form className="ui form">
@@ -14,6 +25,8 @@ function Search() {
             placeholder=" Search categoris..."
             type="text"
             name="search"
+            ref={searchRef}
+            onChange={handleRef}
           />
         </label>
       </form>
