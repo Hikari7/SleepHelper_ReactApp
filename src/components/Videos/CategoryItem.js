@@ -1,6 +1,6 @@
 import React from "react";
 
-function CategoryItem({ CategoryItem, handleVideo }) {
+function CategoryItem({ categoryName, handleVideo }) {
   return (
     <>
       <ul>
@@ -8,12 +8,11 @@ function CategoryItem({ CategoryItem, handleVideo }) {
           <button
             className="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900 my-6"
             type="button"
-            onClick={() => handleVideo("rain")}
+            onClick={() => handleVideo(categoryName)}
           >
-            Rain
+            {categoryName}
           </button>
         </li>
-        {CategoryItem}
       </ul>
     </>
   );

@@ -4,6 +4,7 @@ import CategoryItem from "./CategoryItem";
 // import Iframe from "react-iframe";
 
 function Categories({ setVideo }) {
+  //handleVideo("rain")の引数がgenre
   const handleVideo = async (genre) => {
     const data = await youtube.get("/search", {
       params: {
@@ -14,16 +15,18 @@ function Categories({ setVideo }) {
     setVideo([data]);
   };
 
-  //mapで回す？
-  const categoryName = ["rain", "waves"];
-
+  const categoryNames = ["raindrops", "waves", "ghibli"];
   return (
     <>
-      <CategoryItem
-        CategoryItem={CategoryItem}
-        handleVideo={handleVideo}
-        categoryName={categoryName}
-      />
+      {categoryNames.map((categoryName, index) => {
+        return (
+          <CategoryItem
+            handleVideo={handleVideo}
+            categoryName={categoryName}
+            key={index}
+          />
+        );
+      })}
     </>
   );
 }
