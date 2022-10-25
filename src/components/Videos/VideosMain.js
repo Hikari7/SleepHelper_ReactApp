@@ -13,9 +13,9 @@ function VideosMain() {
     <>
       <div className="">
         <Header />
-        <Video video={video} />
+        <Video video={video}/>
         <Search />
-        <Categories setVideo={setVideo} />
+        <Categories setVideo={setVideo}  />
       </div>
     </>
   );

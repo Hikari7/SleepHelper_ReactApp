@@ -1,22 +1,28 @@
 import React from "react";
 
-function CategoryItem({ CategoryItem, handleVideo }) {
+function VideoItem({ videoItem }) {
+  if (!videoItem) {
+    return <div>Loading...</div>;
+  }
+
+  //   console.log(videoItem.data.items[0].snippet.thumbnails.medium.url);
+
+  const title = videoItem.data.items[0].snippet.channelTitle;
+  //   const thumbnail = videoItem.data.items[0].snippet.thumbnails.medium.url;
+  const videoSrc = `https://www.youtube.com/embed/${videoItem.data.items[0].id.videoId}`;
+
   return (
-    <>
-      <ul>
-        <li>
-          <button
-            className="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900 my-6"
-            type="button"
-            onClick={() => handleVideo("rain")}
-          >
-            Rain
-          </button>
-        </li>
-        {CategoryItem}
-      </ul>
-    </>
+    <div>
+      {title}
+      {/* <img src={thumbnail} /> */}
+
+      <iframe
+        src={videoSrc}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      />
+    </div>
   );
 }
 
-export default CategoryItem;
+export default VideoItem;
