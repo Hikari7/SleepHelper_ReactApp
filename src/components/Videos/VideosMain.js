@@ -3,6 +3,7 @@ import Header from "../Header";
 import Categories from "./Categories";
 import Video from "./Video";
 import Search from "./Search";
+import { Link } from "react-router-dom";
 
 //video pageの1番の親
 
@@ -13,9 +14,9 @@ function VideosMain() {
     <>
       <div className="">
         <Header />
-        <Video video={video}/>
+        <Video video={video} />
         <Search />
-        <Categories setVideo={setVideo}  />
+        <Categories setVideo={setVideo} />
       </div>
     </>
   );
