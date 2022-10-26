@@ -4,11 +4,8 @@ function Search({ setSearchQuery }) {
   const searchRef = useRef();
 
   const handleRef = () => {
-    setSearchQuery(
-      // categoryNames.filter((categoryName) =>
-      searchRef.current.value
-      // )
-    );
+    setSearchQuery(searchRef.current.value);
+    console.log(searchRef.current.value);
   };
   // console.log(categoryNames);
 

@@ -3,6 +3,7 @@ import youtube from "../../apis/youtube";
 import CategoryItem from "./CategoryItem";
 import Search from "./Search";
 
+
 // import Iframe from "react-iframe";
 
 function Categories({ setVideo }) {
@@ -19,8 +20,9 @@ function Categories({ setVideo }) {
     "Ghibli",
   ];
 
+
+
   const [searchQuery, setSearchQuery] = useState("");
-  // console.log(setSearchQuery);
 
   const handleVideo = async (genre) => {
     const data = await youtube.get("/search", {

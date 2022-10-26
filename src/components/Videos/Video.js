@@ -5,12 +5,13 @@ import VideoItem from "./VideoItem";
 
 const Video = ({ video }) => {
   let randomNum = Math.floor(Math.random() * 11);
-  const renderedVideo = video.map((videoItem) => {
+  const renderedVideo = video.map((videoItem, index) => {
     return (
       <div>
         <VideoItem
           videoItem={videoItem}
-          key={videoItem.data.items[randomNum].videoId}
+          // key={videoItem.data.items[randomNum].videoId}
+          key={index}
         />
       </div>
     );
