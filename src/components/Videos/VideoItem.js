@@ -1,5 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player/youtube";
+import mainImg from "../Videos/img/andriyko-podilnyk-keF8JuEFJww-unsplash.jpg";
 
 function VideoItem({ videoItem }) {
   if (!videoItem) {
@@ -7,14 +8,23 @@ function VideoItem({ videoItem }) {
   }
 
   let randomNum = Math.floor(Math.random() * 11);
-
   const videoSrc = `https://www.youtube.com/embed/${videoItem.data.items[randomNum].id.videoId}`;
+
+  // const handleClick = (e) => {
+  //   e.preventDefault();
+  //   playing = !playing;
+  //   if (playing) {
+  //     playing = true;
+  //   } else {
+  //     playing = false;
+  //   }
+  // };
 
   return (
     <>
-      <div className="h-full">
-        {/* <div className="h-full pointer-events-none"> */}
-        {/* <iframe src="https://giphy.com/embed/M9kzInOzNxFs68P3fH"> */}
+      <div className="h-full w-full">
+        <img src={mainImg} />
+
         <ReactPlayer
           url={videoSrc}
           config={{
@@ -26,25 +36,11 @@ function VideoItem({ videoItem }) {
               },
             },
           }}
-          volume={0.2}
-          playing={true}
-          height="50vh"
-          width="50wh"
-          style={{ opacity: "1" }}
-          playIcon={
-            <div
-              className="play-icon"
-              role="button"
-              tabIndex={0}
-              style={{ outline: "none" }}
-            >
-              {" "}
-              <img src="/images/play.png" alt="" />
-            </div>
-          }
-          light={"https://giphy.com/embed/M9kzInOzNxFs68P3fH"}
-        />{" "}
-        {/* </iframe> */}
+          volume={0.5}
+          height="100vh"
+          width="100wh"
+          style={{ opacity: "0" }}
+        />
       </div>
     </>
   );
