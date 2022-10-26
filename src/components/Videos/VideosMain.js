@@ -12,7 +12,7 @@ function VideosMain() {
   return (
     <>
       <div className="">
-        <Header />
+        {/* <Header /> */}
         <Video video={video} />
         <Categories setVideo={setVideo} />
         <Link to="/">

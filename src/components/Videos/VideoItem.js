@@ -22,9 +22,10 @@ function VideoItem({ videoItem }) {
 
   return (
     <>
-      <div className="h-full w-full">
-        <img src={mainImg} />
-
+      <div className="relative">
+        <div className="h-full absolute">
+          <img src={mainImg} />
+        </div>
         <ReactPlayer
           url={videoSrc}
           config={{
@@ -37,6 +38,7 @@ function VideoItem({ videoItem }) {
             },
           }}
           volume={0.5}
+          light={false}
           height="100vh"
           width="100wh"
           style={{ opacity: "0" }}
