@@ -5,3 +5,7 @@
 .main-font {
   font-family: "Proxima Nova", Verdana, "Avenir Next";
 }
+
+.player-wrapper {
+  margin: 36px auto;
+}

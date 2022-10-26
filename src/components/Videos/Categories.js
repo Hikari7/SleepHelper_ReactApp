@@ -9,7 +9,7 @@ function Categories({ setVideo }) {
   const categoryNames = [
     "Rain drops",
     "Ocean waves",
-    "Forest",
+    "Forest nature",
     "City trafic sounds",
     "Relaxing music",
     "ASMR",
