@@ -22,6 +22,7 @@ function VideoItem({ videoItem }) {
         width="300px"
         volume={0.101}
         loop={true}
+        // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       />
       {/* </div> */}
     </>

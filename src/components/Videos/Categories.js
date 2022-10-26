@@ -3,9 +3,6 @@ import youtube from "../../apis/youtube";
 import CategoryItem from "./CategoryItem";
 import Search from "./Search";
 
-
-// import Iframe from "react-iframe";
-
 function Categories({ setVideo }) {
   const categoryNames = [
     "Rain drops",
@@ -20,15 +17,14 @@ function Categories({ setVideo }) {
     "Ghibli",
   ];
 
-
-
   const [searchQuery, setSearchQuery] = useState("");
+  // const [result, setResult] = useState(false)
 
   const handleVideo = async (genre) => {
     const data = await youtube.get("/search", {
       params: {
         q: "sleep" + genre,
-        maxResults: 10,
+        maxResults: 5,
       },
     });
     setVideo([data]);
@@ -42,14 +38,27 @@ function Categories({ setVideo }) {
     <>
       <Search categoryNames={categoryNames} setSearchQuery={setSearchQuery} />
       {inputValue.map((categoryName, index) => {
+        // let isResult = true;
         return (
-          <>
+          <div key={index}>
             <CategoryItem
               handleVideo={handleVideo}
               categoryName={categoryName}
-              key={index}
             />
-          </>
+          </div>
+
+          // <div>
+          //   {isResult ? (
+          //     <div key={index}>
+          //       <CategoryItem
+          //         handleVideo={handleVideo}
+          //         categoryName={categoryName}
+          //       />
+          //     </div>
+          //   ) : (
+          //     <span>There is no result</span>
+          //   )}
+          // </div>
         );
       })}
     </>

@@ -5,7 +5,7 @@ function Search({ setSearchQuery }) {
 
   const handleRef = () => {
     setSearchQuery(searchRef.current.value);
-    console.log(searchRef.current.value);
+    // console.log(searchRef.current.value);
   };
   // console.log(categoryNames);
 
