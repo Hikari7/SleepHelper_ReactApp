@@ -7,12 +7,12 @@ function VideoItem({ videoItem }) {
 
   let randomNum = Math.floor(Math.random() * 11);
 
-  const title = videoItem.data.items[randomNum].snippet.channelTitle;
+  // const title = videoItem.data.items[randomNum].snippet.channelTitle;
   const videoSrc = `https://www.youtube.com/embed/${videoItem.data.items[randomNum].id.videoId}`;
 
   return (
     <>
-      {title}
+      {/* {title} */}
       <iframe
         src={videoSrc}
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

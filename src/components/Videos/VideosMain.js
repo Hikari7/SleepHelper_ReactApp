@@ -14,7 +14,6 @@ function VideosMain() {
       <div className="">
         <Header />
         <Video video={video} />
-        {/* <Search /> */}
         <Categories setVideo={setVideo} />
         <Link to="/">
           <button className="bg-transparent hover:bg-pink-200 text-pink-300 font-semibold hover:text-white py-1 px-4 border border-pink-400 hover:border-transparent rounded mt-5">

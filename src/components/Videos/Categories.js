@@ -41,13 +41,12 @@ function Categories({ setVideo }) {
       <Search categoryNames={categoryNames} setSearchQuery={setSearchQuery} />
       {inputValue.map((categoryName, index) => {
         return (
-          <>
+          <div key={index}>
             <CategoryItem
               handleVideo={handleVideo}
               categoryName={categoryName}
-              key={index}
             />
-          </>
+          </div>
         );
       })}
     </>
