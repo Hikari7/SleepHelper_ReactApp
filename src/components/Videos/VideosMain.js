@@ -10,8 +10,8 @@ function VideosMain() {
   const [video, setVideo] = useState([]);
 
   return (
-    <>
-      <div className="">
+    <div>
+      <div className="bg-slate-900 h-screen">
         {/* <Header /> */}
         <Video video={video} />
         <Categories setVideo={setVideo} />
@@ -21,7 +21,7 @@ function VideosMain() {
           </button>
         </Link>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -4,7 +4,6 @@ import VideoItem from "./VideoItem";
 //Categoriesで、setVideoがすでに更新されているので、videoのpropsをここで使う
 
 const Video = ({ video }) => {
-  // let randomNum = Math.floor(Math.random() * 11);
   const renderedVideo = video.map((videoItem, index) => {
     return (
       <div key={index}>
