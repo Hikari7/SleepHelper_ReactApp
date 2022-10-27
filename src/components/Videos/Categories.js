@@ -9,12 +9,19 @@ function Categories({ setVideo }) {
     "Ocean waves",
     "Forest nature",
     "City trafic sounds",
-    "Relaxing music",
-    "ASMR",
     "Whitenoise",
     "Cat purring",
-    "Bed time stroy",
+    "Meditaion",
+    "Relaxing music",
+    "Piano",
     "Ghibli",
+    "Disney",
+    "Lofi",
+    "ASMR whispering",
+    "ASMR tapping",
+    "ASMR keyboard typing",
+    "ASMR cooking",
+    "Relaxing bed time stroy",
   ];
 
   const [searchQuery, setSearchQuery] = useState("");
@@ -35,21 +42,25 @@ function Categories({ setVideo }) {
 
   return (
     <>
-      <Search categoryNames={categoryNames} setSearchQuery={setSearchQuery} />
-      {inputValue.map((categoryName, index) => {
-        return (
-          <div
-            key={index}
-            // className="sm:container md:container lg:container  mx-auto w-16"
-            className="sm:container md:container lg:container  mx-auto w-16"
-          >
-            <CategoryItem
-              handleVideo={handleVideo}
-              categoryName={categoryName}
-            />
-          </div>
-        );
-      })}
+      <div className="main-bg main-font ">
+        <Search
+          categoryNames={categoryNames}
+          setSearchQuery={setSearchQuery}
+          handleVideo={handleVideo}
+        />
+        <div className="md:container lg:container  mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 content-center">
+          {inputValue.map((categoryName, index) => {
+            return (
+              <div key={index} className="">
+                <CategoryItem
+                  handleVideo={handleVideo}
+                  categoryName={categoryName}
+                />
+              </div>
+            );
+          })}
+        </div>
+      </div>
     </>
   );
 }

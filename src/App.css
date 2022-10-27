@@ -6,6 +6,10 @@
   font-family: "Proxima Nova", Verdana, "Avenir Next";
 }
 
-.player-wrapper {
-  margin: 36px auto;
+.main-bg {
+  background-color: #1b2430;
+}
+
+.btn-color {
+  background-color: #51557e;
 }
