@@ -11,7 +11,7 @@ function VideosMain() {
 
   return (
     <div className="main-bg main-font h-screen ">
-      {/* <Header /> */}
+      <Header />
       <Video video={video} />
       {/* <div className="flex item-center justify-center h-screen w-screen"> */}
       <Categories setVideo={setVideo} />
