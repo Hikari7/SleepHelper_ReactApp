@@ -13,14 +13,7 @@ function VideosMain() {
     <div className="main-bg main-font h-screen ">
       <Header />
       <Video video={video} />
-      {/* <div className="flex item-center justify-center h-screen w-screen"> */}
       <Categories setVideo={setVideo} />
-      {/* <Link to="/">
-          <button className="rounded-2xl p-4 btn-color hover:bg-indigo-300  text-zinc-500 hover:text-pink-100 transition duration-0 hover:duration-700 ease-in flex justify-centers my-9 m-auto ">
-            Back
-          </button>
-        </Link> */}
-      {/* </div> */}
     </div>
   );
 }

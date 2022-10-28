@@ -11,9 +11,6 @@ function VideoItem({ videoItem }) {
 
   const playing = true;
 
-  // const mainImg =
-  //   "https://images.unsplash.com/photo-1530790086183-21177ac45b3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80";
-
   const mainImg = "https://source.unsplash.com/random/?night"
 
   return (
