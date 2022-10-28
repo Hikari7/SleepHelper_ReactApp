@@ -6,7 +6,7 @@ import VideoItem from "./VideoItem";
 const Video = ({ video }) => {
   const renderedVideo = video.map((videoItem, index) => {
     return (
-      <div key={index}>
+      <div key={index} className="">
         <VideoItem videoItem={videoItem} />
       </div>
     );
@@ -14,7 +14,5 @@ const Video = ({ video }) => {
 
   return <>{renderedVideo}</>;
 };
-
-//Categoriesを押したら、videoが表示される
 
 export default Video;

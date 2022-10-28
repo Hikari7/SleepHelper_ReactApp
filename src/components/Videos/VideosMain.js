@@ -10,11 +10,13 @@ function VideosMain() {
   const [video, setVideo] = useState([]);
 
   return (
-    <div className="main-bg main-font h-screen ">
-      <Header />
-      <Video video={video} />
-      <Categories setVideo={setVideo} />
-    </div>
+    <>
+      <div className="main-font main-bg">
+        <Header />
+        <Video video={video} />
+        <Categories setVideo={setVideo} />
+      </div>
+    </>
   );
 }
 

@@ -42,7 +42,7 @@ function Categories({ setVideo }) {
 
   return (
     <>
-      <div className="main-bg main-font ">
+      <div className="main-font ">
         <Search
           categoryNames={categoryNames}
           setSearchQuery={setSearchQuery}
