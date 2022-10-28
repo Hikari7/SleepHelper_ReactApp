@@ -1,11 +1,32 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
+import gsap from "gsap";
 
 function Home() {
+  const homeRef = useRef(null);
+
+  useEffect(() => {
+    const easeIn = gsap.fromTo(
+      ".home",
+      { y: "40%" },
+      { y: 0 },
+      { duration: 50 }
+    );
+
+    function slower() {
+      easeIn.timeScale(0.4);
+    }
+
+    slower();
+  }, []);
+
   return (
     <>
-      <main className="main-bg h-screen w-screen main-font relative">
-        <div className="font-light w-3/5  mx-auto justify-center block  absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  rounded-md text-center">
+      <main className=" main-bg h-screen w-screen main-font relative">
+        <div
+          className="font-light w-3/5  mx-auto justify-center block  absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  rounded-md text-center home"
+          ref={homeRef}
+        >
           <h1 className="text-5xl text-zinc-400 tracking-wider">Sleep tight</h1>
           <h3 className="text-md text-zinc-500 mt-6">Need help to sleep? </h3>
           <h3 className="text-md text-zinc-500 mt-2">
