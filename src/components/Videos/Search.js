@@ -16,7 +16,7 @@ function Search({ setSearchQuery, handleVideo }) {
   return (
     <div>
       <form
-        className="ui form flex justify-center py-6 pt-20"
+        className="ui form flex justify-center pb-6 "
         onSubmit={handleSubmit}
       >
         <label className="relative block">

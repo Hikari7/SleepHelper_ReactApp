@@ -1,22 +1,22 @@
 import React from "react";
 import ReactPlayer from "react-player/youtube";
+// import defaultImg from "../defaultImg";
 
 function VideoItem({ videoItem }) {
-  if (!videoItem) {
-    return <div>Loading...</div>;
-  }
+
+
+  const mainImg = "https://source.unsplash.com/random/?night";
 
   let randomNum = Math.floor(Math.random() * 11);
   const videoSrc = `https://www.youtube.com/embed/${videoItem.data.items[randomNum].id.videoId}`;
 
   const playing = true;
 
-  const mainImg = "https://source.unsplash.com/random/?night"
-
   return (
     <>
+
       <div
-        className="h-full bg-cover "
+        className="h-full bg-cover"
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(${mainImg})`,
         }}
