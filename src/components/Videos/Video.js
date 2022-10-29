@@ -26,17 +26,3 @@ const Video = ({ video }) => {
 
 export default Video;
 
-// const DefaultImg = () => {
-// if (!video) {
-//   return (
-//     <div>
-//       aaa
-//       <DefaultImg />
-//     </div>
-//   );
-// }
-// };
-
-// if (!!videoItem) {
-//   return <div>Loading...</div>;
-// }

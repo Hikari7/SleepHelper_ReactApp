@@ -9,9 +9,6 @@ import DefaultImg from "../DefaultImg";
 function VideosMain() {
   const [video, setVideo] = useState([]);
 
-  // if (!!video) {
-  //   return <DefaultImg />;
-  // }
 
   return (
     <>
