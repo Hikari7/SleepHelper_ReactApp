@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import HeaderModal from "./HeaderModal";
 
 function Header() {
   return (
@@ -9,9 +8,9 @@ function Header() {
         <div className="container flex justify-between items-center mx-auto text-white">
           <div>
             <Link to="/">
-              <a className="self-center text-xl whitespace-nowrap cursor-pointer transition hover:duration-700 text-white opacity-20 hover:opacity-80 font-semibold">
+              <div className="self-center text-xl whitespace-nowrap cursor-pointer transition hover:duration-700 text-white opacity-20 hover:opacity-80 font-semibold">
                 Sleep tight
-              </a>
+              </div>
             </Link>
           </div>
           <div className="flex">

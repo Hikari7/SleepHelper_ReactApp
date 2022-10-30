@@ -18,10 +18,10 @@ const DefaultImg = () => {
   const mainImg = "https://source.unsplash.com/random/?night";
   return (
     <>
-      <div class="img-wrap">
+      <div className="img-wrap">
         <img
           src={mainImg}
-          alt="picture"
+          alt="mainimage"
           className="h-screen w-screen z-20 bg-no-repeat opacity-50 object-cover defaultImg"
         />
         <div className="middle-effect  opacity-50">
@@ -31,7 +31,7 @@ const DefaultImg = () => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
-              class="bi bi-caret-down"
+              className="bi bi-caret-down"
               viewBox="0 0 16 16"
             >
               <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />

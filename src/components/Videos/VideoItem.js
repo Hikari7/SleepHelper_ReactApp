@@ -1,10 +1,7 @@
 import React from "react";
 import ReactPlayer from "react-player/youtube";
-// import defaultImg from "../defaultImg";
 
 function VideoItem({ videoItem }) {
-
-
   const mainImg = "https://source.unsplash.com/random/?night";
 
   let randomNum = Math.floor(Math.random() * 11);
@@ -14,7 +11,6 @@ function VideoItem({ videoItem }) {
 
   return (
     <>
-
       <div
         className="h-full bg-cover bg-shadow"
         style={{

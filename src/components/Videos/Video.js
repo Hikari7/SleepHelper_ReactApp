@@ -2,14 +2,8 @@ import React from "react";
 import DefaultImg from "./DefaultImg";
 import VideoItem from "./VideoItem";
 
-//Categoriesで、setVideoがすでに更新されているので、videoのpropsをここで使う
-
 const Video = ({ video }) => {
   const renderedVideo = video.map((videoItem, index) => {
-    // if (!!videoItem) {
-    //   return <DefaultImg />;
-    // }
-
     return (
       <div key={index} className="">
         <VideoItem videoItem={videoItem} />
@@ -17,7 +11,6 @@ const Video = ({ video }) => {
     );
   });
 
-  //if [].length===0;
   if (video.length === 0) {
     return <DefaultImg />;
   }
@@ -25,4 +18,3 @@ const Video = ({ video }) => {
 };
 
 export default Video;
-
