@@ -43,6 +43,9 @@ function Categories({ setVideo }) {
   return (
     <>
       <div className="main-font ">
+        <p className="mx-auto justify-centercontent-center pt-20 text-center text-slate-300 font-thin">
+          Which sound would you like to sleep with tonight?
+        </p>
         <Search
           categoryNames={categoryNames}
           setSearchQuery={setSearchQuery}
