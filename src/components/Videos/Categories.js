@@ -48,7 +48,7 @@ function Categories({ setVideo }) {
           setSearchQuery={setSearchQuery}
           handleVideo={handleVideo}
         />
-        <div className="md:container lg:container  mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 content-center">
+        <div className="md:container lg:container  mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 content-center py-10">
           {inputValue.map((categoryName, index) => {
             return (
               <div key={index} className="">

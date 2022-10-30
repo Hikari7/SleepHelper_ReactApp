@@ -1,5 +1,5 @@
 import React from "react";
-import DefaultImg from "../DefaultImg";
+import DefaultImg from "./DefaultImg";
 import VideoItem from "./VideoItem";
 
 //Categoriesで、setVideoがすでに更新されているので、videoのpropsをここで使う

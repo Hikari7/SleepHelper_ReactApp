@@ -13,3 +13,66 @@
 .btn-color {
   background-color: #51557e;
 }
+
+.middle-line {
+  height: 0px;
+  width: 1px;
+  background: #fff;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.middle-dot1 {
+  height: 0px;
+  width: 1px;
+  background: #fff;
+  margin: 40px auto;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.middle-dot2 {
+  height: 0px;
+  width: 1px;
+  background: #fff;
+  margin: 40px auto;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bi,
+.bi-caret-down {
+  height: 0px;
+  width: 50px;
+  color: #fff;
+  margin: 40px auto;
+  position: absolute;
+  top: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.down {
+  width: 50px;
+  height: 50px;
+  border: 1px solid;
+  border-color: #565656 #565656 transparent transparent;
+  transform: rotate(-45deg);
+}
+
+.defaultImg {
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 5%,
+    #f2f0ea 90%
+  );
+  z-index: 150;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

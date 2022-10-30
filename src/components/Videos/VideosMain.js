@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Header from "../Header";
 import Categories from "./Categories";
 import Video from "./Video";
-import DefaultImg from "../DefaultImg";
+import DefaultImg from "./DefaultImg";
 
 //video pageの1番の親
 
