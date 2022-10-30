@@ -5,13 +5,13 @@ import HeaderModal from "./HeaderModal";
 function Header() {
   return (
     <>
-      <nav className="px-7 sm:px-4 py-5 rounded bg-transparent z-10 absolute w-full box-border">
+      <nav className="px-7 sm:px-4 py-5 rounded bg-transparent absolute w-full box-border z-50">
         <div className="container flex justify-between items-center mx-auto text-white">
           <div>
             <Link to="/">
-              <div className="self-center text-xl whitespace-nowrap cursor-pointer transition hover:duration-700 text-white  opacity-20 hover:opacity-80 font-semibold">
+              <a className="self-center text-xl whitespace-nowrap cursor-pointer transition hover:duration-700 text-white  opacity-20 hover:opacity-80 font-semibold">
                 Sleep tight
-              </div>
+              </a>
             </Link>
           </div>
           <div className="flex">
