@@ -2,29 +2,41 @@ import React from "react";
 import ReactPlayer from "react-player/youtube";
 
 function VideoItem({ videoItem }) {
-  if (!videoItem) {
-    return <div>Loading...</div>;
-  }
+  const mainImg = "https://source.unsplash.com/random/?night";
 
   let randomNum = Math.floor(Math.random() * 11);
   const videoSrc = `https://www.youtube.com/embed/${videoItem.data.items[randomNum].id.videoId}`;
 
+  const playing = true;
+
   return (
     <>
-      {/* <div style={{ height: "100vh", opacity: "0" }}> */}
-      <ReactPlayer
-        style={{ opacity: "1" }}
-        // controls={false}
-        light={true}
-        // playing={playing}
-        url={videoSrc}
-        height="300px"
-        width="300px"
-        volume={0.101}
-        loop={true}
-        // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      />
-      {/* </div> */}
+      <div
+        className="h-full bg-cover bg-shadow"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(${mainImg})`,
+        }}
+      >
+        <ReactPlayer
+          url={videoSrc}
+          config={{
+            youtube: {
+              playerVars: {
+                color: "white",
+                modestbranding: true,
+                showinfo: 1,
+              },
+            },
+          }}
+          volume={0.5}
+          light={false}
+          height="100vh"
+          width="100wh"
+          muted={false}
+          style={{ opacity: "0" }}
+          playing={playing}
+        />
+      </div>
     </>
   );
 }

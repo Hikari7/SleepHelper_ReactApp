@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Sleep tight
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web application helps users to sleep better
 
-## Available Scripts
+## Demo Link
 
-In the project directory, you can run:
+- [Sleep tight](https://sleeptight.vercel.app/)
 
-### `npm start`
+![The home image](./src/ReadMe/Screen%20Shot%202022-10-30%20at%209.25.23%20AM.png)
+![The top image](./src/ReadMe/Screen%20Shot%202022-10-30%20at%209.26.07%20AM.png)
+![The categories image](./src/ReadMe/Screen%20Shot%202022-10-31%20at%205.45.09%20PM.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Built With
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- `React` : version 18.2.0
+- `GSAP` : version 3.11.3
+- `tailwindcss` : version 3.0.2
 
-### `npm test`
+- YouTube Data API v3
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- The web app only plays BGM-related relaxing sounds fetched by Youtube Data API. I've already incorporated the query keyword "sleep" in the the parameters as the default, so that's why only the relaxing video (sound) will be played. And also users can choose various relaxing sound categories and search what categories the app has as well.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Designed the minimized styling to help the user to focus on sleeping well. So I used `ReactPlayer v2.0` for customizing sound player settings and made videos invisible to avoid destructing sleeping.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Challenging Part
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Implementing the search section was challenging for me. Because it was necessary to consider the component structures properly and efficiently.  So I made the `search.js` for getting the values the user typed as a child component of `Categoies.js `. And then I used them as props to filter depending on the category's name.
+I was able to learn how to manage props through this.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Setup
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Download or clone the repository
+- Run npm install
+- Run npm start to start running the app
 
-## Learn More
+## Status
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This app is still in progress to be updated!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

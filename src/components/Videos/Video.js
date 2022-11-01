@@ -1,24 +1,20 @@
 import React from "react";
+import DefaultImg from "./DefaultImg";
 import VideoItem from "./VideoItem";
 
-//Categoriesで、setVideoがすでに更新されているので、videoのpropsをここで使う
-
 const Video = ({ video }) => {
-  let randomNum = Math.floor(Math.random() * 11);
   const renderedVideo = video.map((videoItem, index) => {
     return (
-      <div key={index}>
-        <VideoItem
-          videoItem={videoItem}
-          // key={videoItem.data.items[randomNum].videoId}
-        />
+      <div key={index} className="">
+        <VideoItem videoItem={videoItem} />
       </div>
     );
   });
 
+  if (video.length === 0) {
+    return <DefaultImg />;
+  }
   return <>{renderedVideo}</>;
 };
-
-//Categoriesを押したら、videoが表示される
 
 export default Video;
