@@ -21,9 +21,7 @@
 ////light mode
 
 .btn-color-light {
-  /* background-color: #c7cee4; */
-  background-color: red;
-  color: #fff9ee;
+  background-color: #c7cee4;
 }
 
 .bg-shadow-light {
