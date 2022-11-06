@@ -1,6 +1,7 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
+import LightModeContext from "../../src/contexts/LightMode-context";
 
 function Home() {
   const homeRef = useRef(null);
@@ -20,9 +21,15 @@ function Home() {
     slower();
   }, []);
 
+  const { lightMode, setLightMode } = useContext(LightModeContext);
+
   return (
     <>
-      <main className="main-bg h-screen w-screen main-font relative">
+      <main
+        className={`${
+          lightMode ? "main-bg" : "main-bg-light"
+        } h-screen w-screen main-font relative`}
+      >
         <div
           className="font-light w-3/5  mx-auto justify-center block  absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  rounded-md text-center home"
           ref={homeRef}

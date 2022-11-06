@@ -1,10 +1,10 @@
-import React from "react";
+// import React from "react";
 
-const VideoPlayer = () => {
-  const [playing, setPlaying] = useState("");
-  const pause = () => setPlaying(false);
+// const VideoPlayer = () => {
+//   const [playing, setPlaying] = useState("");
+//   const pause = () => setPlaying(false);
 
-  return <div>VideoPlayer</div>;
-};
+//   return <div>VideoPlayer</div>;
+// };
 
-export default VideoPlayer;
+// export default VideoPlayer;
