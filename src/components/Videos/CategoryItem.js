@@ -1,9 +1,9 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import LightModeContext from "../../contexts/LightMode-context";
 
 function CategoryItem({ categoryName, handleVideo }) {
   const { lightMode } = useContext(LightModeContext);
-
+  console.log(lightMode);
   return (
     <>
       <div className="flex items-center justify-center mt-5 auto-cols-auto">
@@ -22,3 +22,6 @@ function CategoryItem({ categoryName, handleVideo }) {
 }
 
 export default CategoryItem;
+
+//inspectで見ても、toggleはされているけどbtn colorが消えない、消してlightだけ反映させようとしても色が変わらない
+

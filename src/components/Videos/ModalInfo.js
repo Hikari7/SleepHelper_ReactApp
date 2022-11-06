@@ -9,7 +9,7 @@ export default function ModalInfo() {
         width="24"
         height="24"
         fill="currentColor"
-        className="bi bi-music-note-list cursor-pointer mr-4 transition duration-0 hover:duration-700 opacity-20 hover:opacity-80"
+        className="bi bi-music-note-list cursor-pointer mr-10 transition duration-0 hover:duration-700 opacity-20 hover:opacity-80 "
         viewBox="0 0 16 16"
         type="button"
         onClick={() => setShowModal(true)}
@@ -43,9 +43,9 @@ export default function ModalInfo() {
                 <div className="relative px-6 pt-3 pb-5 flex-auto">
                   <p className=" text-slate-500 text-sm leading-relaxed">
                     Once you click on the sound button, the music will be
-                    started. The volume will be gradually reduced as the music ends,
-                    but you can also stop the sound just by clicking the main
-                    image. <br></br>
+                    started. The volume will be gradually reduced as the music
+                    ends, but you can also stop the sound just by clicking the
+                    main image. <br></br>
                     Sleep tight with your favourite sound🌙
                   </p>
                 </div>

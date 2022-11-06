@@ -2,12 +2,12 @@ import React, { useState, useContext } from "react";
 import Header from "../Header";
 import Categories from "./Categories";
 import Video from "./Video";
-// import LightModeContext from "../../";
 import LightModeContext from "../../contexts/LightMode-context";
+import "../../App.css";
 
 function VideosMain() {
-  // const lightTheme = useContext(LightModeContext);
   const { lightMode } = useContext(LightModeContext);
+
   const [video, setVideo] = useState([]);
 
   return (

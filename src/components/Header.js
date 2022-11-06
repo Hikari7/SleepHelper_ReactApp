@@ -14,11 +14,11 @@ function Header() {
 
   return (
     <>
-      <nav className="px-7 sm:px-4 py-5 rounded bg-transparent absolute w-full box-border z-50">
+      <nav className="px-7 sm:px-4 py-10 rounded bg-transparent absolute w-full box-border z-50">
         <div className="container flex justify-between items-center mx-auto text-white">
           <div>
             <Link to="/">
-              <div className="self-center text-xl whitespace-nowrap cursor-pointer transition hover:duration-700 text-white opacity-20 hover:opacity-80 font-semibold">
+              <div className="self-center text-3xl whitespace-nowrap cursor-pointer transition hover:duration-700 text-white opacity-20 hover:opacity-80 font-semibold ml-10">
                 Sleep tight
               </div>
             </Link>
@@ -29,7 +29,7 @@ function Header() {
               width="24"
               height="24"
               fill="currentColor"
-              className="bi bi-lamp cursor-pointer mr-4 transition duration-0 hover:duration-700 opacity-20 hover:opacity-80"
+              className="bi bi-lamp cursor-pointer mr-8 transition duration-0 hover:duration-700 opacity-20 hover:opacity-80"
               viewBox="0 0 16 16"
               onClick={toggleLightMode}
             >
