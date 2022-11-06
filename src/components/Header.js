@@ -6,10 +6,10 @@ import LightModeContext from "../../src/contexts/LightMode-context";
 function Header() {
   //LightMode Context(LightModeProviderの内容をimportさせているからcontextを呼べばそれをここで使える)
 
-  const { lightMode, setLightMode } = useContext(LightModeContext);
+  const lightTheme = useContext(LightModeContext);
 
   const toggleLightMode = () => {
-    setLightMode(!lightMode);
+    lightTheme.setLightMode(!lightTheme.lightMode);
   };
 
   return (
@@ -31,7 +31,7 @@ function Header() {
               fill="currentColor"
               className="bi bi-lamp cursor-pointer mr-4 transition duration-0 hover:duration-700 opacity-20 hover:opacity-80"
               viewBox="0 0 16 16"
-              onClick={() => toggleLightMode}
+              onClick={toggleLightMode}
             >
               <path
                 fillRule="evenodd"

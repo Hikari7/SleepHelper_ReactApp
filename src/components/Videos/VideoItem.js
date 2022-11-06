@@ -12,7 +12,7 @@ function VideoItem({ videoItem }) {
   return (
     <>
       <div
-        className="h-full bg-cover bg-shadow"
+        className="h-full bg-cover bg-shadow-light"
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(${mainImg})`,
         }}
