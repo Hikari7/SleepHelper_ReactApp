@@ -1,9 +1,11 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useContext } from "react";
 import gsap from "gsap";
 import "../Videos/DefaultImg.css";
+import LightModeContext from "../../contexts/LightMode-context";
 
 const DefaultImg = () => {
   const lineRef = useRef(null);
+  const { lightMode } = useContext(LightModeContext);
 
   useEffect(() => {
     const Timeline = gsap.timeline();
@@ -18,13 +20,13 @@ const DefaultImg = () => {
   const mainImg = "https://source.unsplash.com/random/?night";
   return (
     <>
-      <div className="img-wrap">
+      <div className={`${lightMode ? "img-wrap-light" : "img-wrap"} main-font`}>
         <img
           src={mainImg}
           alt="mainimage"
           className="h-screen w-screen z-20 bg-no-repeat opacity-50 object-cover defaultImg"
         />
-        <div className="middle-effect  opacity-50">
+        <div className="middle-effect">
           <div className="middle-line" ref={lineRef}>
             <div className="middle-dot1"></div>
             <div className="middle-dot2"></div>

@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import ReactPlayer from "react-player/youtube";
+
 
 function VideoItem({ videoItem }) {
   const mainImg = "https://source.unsplash.com/random/?night";
@@ -9,10 +10,12 @@ function VideoItem({ videoItem }) {
 
   const playing = true;
 
+
+
   return (
     <>
       <div
-        className="h-full bg-cover bg-shadow-light"
+        className="h-full bg-cover"
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(${mainImg})`,
         }}

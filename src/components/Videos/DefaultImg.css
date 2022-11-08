@@ -64,6 +64,17 @@
   box-shadow: inset 0 -50px 40px 0px #1b2430;
 }
 
+.img-wrap-light::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: inset 0 -50px 40px 0px #586284;
+}
+
+
 .defaultImg {
   width: 100vw;
   height: 100vh;
