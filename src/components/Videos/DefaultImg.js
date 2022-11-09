@@ -20,7 +20,8 @@ const DefaultImg = () => {
   const mainImg = "https://source.unsplash.com/random/?night";
   return (
     <>
-      <div className={`${lightMode ? "img-wrap-light" : "img-wrap"} main-font`}>
+      {/* <div className={`${lightMode ? "img-wrap-light" : "img-wrap"}`}> */}
+      <div>
         <img
           src={mainImg}
           alt="mainimage"

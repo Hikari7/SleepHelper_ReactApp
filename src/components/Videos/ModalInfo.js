@@ -40,12 +40,14 @@ export default function ModalInfo() {
                     </svg>
                   </button>
                 </div>
-                <div className="relative px-6 pt-3 pb-5 flex-auto">
-                  <p className=" text-slate-500 text-sm leading-relaxed">
-                    Once you click on the sound button, the music will be
-                    started. The volume will be gradually reduced as the music
-                    ends, but you can also stop the sound just by clicking the
-                    main image. <br></br>
+                <div className="relative px-6 pb-5 flex-auto">
+                  <h3 className="text-slate-700 pb-3">How to use it?</h3>
+                  <p className=" text-slate-500 text-sm leading-relaxed break-words">
+                    Once you click on the sound button, a random realxing sound
+                    will be started. <br />
+                    The volume will be gradually reduced as the player ends, but
+                    you can also stop the sound just by clicking the main image.{" "}
+                    <br></br>
                     Sleep tight with your favourite sound🌙
                   </p>
                 </div>

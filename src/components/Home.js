@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
 import LightModeContext from "../../src/contexts/LightMode-context";
+import SignInButton from "./SignInButton";
 
 function Home() {
   const homeRef = useRef(null);
@@ -36,9 +37,9 @@ function Home() {
             No worries, this app helps for you
           </h3>
           <Link to="/sound">
-            <button className="rounded-2xl p-4 btn-color hover:bg-indigo-300  text-zinc-500 hover:text-pink-100 mt-6 transition duration-0 hover:duration-700 ease-in flexitems-center justify-centers">
-              Click here
-            </button>
+            {/* <button className="rounded-2xl p-4 btn-color hover:bg-indigo-300  text-zinc-500 hover:text-pink-100 mt-6 transition duration-0 hover:duration-700 ease-in flexitems-center justify-centers"> */}
+            <SignInButton />
+            {/* </button> */}
           </Link>
         </div>
       </main>
