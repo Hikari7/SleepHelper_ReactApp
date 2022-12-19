@@ -12,7 +12,7 @@ function VideosMain() {
 
   return (
     <>
-      <div className={`${lightMode ? "img-wrap-light" : "img-wrap"} main-font`}>
+      <div className={`${lightMode ? "img-wrap-light" : "img-wrap"}`}>
         <div className={`${lightMode ? "main-bg-light" : "main-bg"} main-font`}>
           <Header />
           <Video video={video} />

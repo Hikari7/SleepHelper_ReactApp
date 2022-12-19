@@ -8,3 +8,5 @@
 // };
 
 // export default VideoPlayer;
+
+useRefも使えるらしいよ
